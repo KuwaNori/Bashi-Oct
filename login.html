@@ -2,28 +2,31 @@
 <head>
   <title>KomaNavi ログイン</title>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <link rel="stylesheet" href="./login.css">
+  <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-  <h1></h1>
-  <div class="index-wrap">
-    <h2>Login</h2>
+  <header>
+
+  </header>
+  <main>
+    <div class="SignUp">Login</div>
     <form method="POST" action="./index2.php">
-      <div class="form-item">
-        <input type="text" name="komanetid" required="required" placeholder="id"><br>
-        <input type="password" name="password" required="required" placeholder="password"><br>
-      </div>
-      <div class="button-panel">
-        <input type="submit" class="button" value="Sign in" ></input>
-      </div>
+        <div class="blank">
+          <input type="text" class="inputArea" name="komanetid" onkeyup="this.setAttribute('value', this.value);" value="" placeholder="Your KomanetID" required>
+          <label>Student Number</label>
+          <span class="focus"></span>
+        </div>
+        <div class="blank">
+          <input type="password" class="inputArea" name="password" onkeyup="this.setAttribute('value', this.value);" value="" placeholder="Password" required>
+          <label>Password</label>
+          <span class="focus"></span>
+        </div>
+        <div class="LoginButton">
+          <label class="sbtLabel" for="sbt">Login</label>
+        </div>
+        <input type="submit" name="" id="sbt">
     </form>
-    <p>*はじめての方は<a href="./regist.html">こちら</a>から登録してください。</p>
-​
-  </div>
-  <div class="nec">
-  </div>
-
-
-
+    <div class="linkToRegistBox">Don't have account? <a class="linkToRegist" href="./regist.html">Create one</a>!</div>
+  </main>
 </body>
 </html>
