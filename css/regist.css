@@ -1,0 +1,144 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-image: url("../images/home.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+header{
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.SignUp{
+  margin-top: 5%;
+  font-family: 'Hind Siliguri', sans-serif;
+  color: #9A846F;
+  font-size: 50px;
+}
+
+/* 入力部分 */
+.blank {
+  width: 900px;
+  font-size: 20px;
+	position: relative;
+	width: 100%;
+	margin: 40px 3%;
+}
+.inputLetter{
+  margin-left: 20px;
+}
+.blank input[type='text'] {
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+  padding: 0.3em;
+	padding-left: 4em;
+  font-size: 20px;
+  color: white;
+}
+.blank input[type='text']::placeholder {
+  color: transparent;
+}
+.blank input[type='text']:focus {
+	outline: none;
+  text-align: left;
+  color: white;
+}
+.blank input[type='text']:focus::placeholder{
+  color: #aaaaaa;
+}
+.inputArea {
+  border: 0;
+	position: relative;
+	padding: 7px 15px;
+	background: transparent;
+  border-bottom: 2px solid #cfcfcf;
+}
+.inputArea ~ .focus {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	transition: 0.4s;
+	background-color: transparent;
+}
+.inputAreaa:focus {
+  border-bottom: none;
+  outline: none;
+}
+.inputArea:focus ~ .focus, .blank.inputArea ~ .focus {
+	width: 100%;
+	transition: 0.4s;
+	background-color: rgba(255,255,255,.2);
+}
+.inputArea ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 10px;
+	left: 14px;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #cccccc;
+}
+/* .inputArea:focus ~ label, .blank.inputArea ~ label {
+	font-size: 12px;
+	top: -18px;
+	left: 0;
+	transition: 0.3s;
+	color: #fff;
+} */
+.blank > .inputArea:focus ~ label, input.inputArea:not([value=""]) ~ label{
+  font-size: 12px;
+	top: -18px;
+	left: 0;
+	transition: 0.3s;
+	color: #fff;
+}
+/* 送信ボタン */
+.SignupButton{
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+}
+.sbtLabel{
+  width: 50%;
+  border: 1px solid #aaaaaa;
+  padding: 4px 10px;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.sbtLabel:hover{
+  background-color: rgba(255,255,255,.8);
+  color: black;
+}
+input[type='submit']{
+  display: none;
+}
+
+/* ログインリンク */
+.linkToLoginBox{
+  margin-top: 20%;
+}
+.linkToLogin{
+  text-decoration: none;
+  color: #aaaaff;
+  transition-duration: 0.5s;
+}
+.linkToLogin:hover{
+  color: #ffffff;
+}
