@@ -2,12 +2,37 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>KomaNavi 会員登録</title>
+    <link rel="stylesheet" href="./css/regist.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
   </head>
   <body>
-    <form class="" action="regist.php" method="post">
-      <div>Student Number:<input type="text" name="komanetid" value=""></div>
-      <div>Nickname:<input type="text" name="nickname" value=""></div>
+    <header>
+
+    </header>
+    <main>
+      <div class="SignUp">Sign up</div>
+      <form class="" action="regist.php" method="post">
+        <div class="blank">
+          <input type="text" class="inputArea" name="komanetid" onkeyup="this.setAttribute('value', this.value);" value="" placeholder="Your KomanetID" required>
+          <label>Student Number</label>
+          <span class="focus"></span>
+        </div>
+        <div class="blank">
+          <input type="text" class="inputArea" name="nickname" onkeyup="this.setAttribute('value', this.value);" value="" placeholder="What do you go by?" required>
+          <label>Nickname</label>
+          <span class="focus"></span>
+        </div>
+
+        <div class="SignupButton">
+          <label class="sbtLabel" for="sbt">Sign up</label>
+        </div>
+        <input type="submit" name="" id="sbt">
+
+        <div class="linkToLoginBox">
+          You already have account? Login from <a class="linkToLogin" href="./login.html">here</a>
+        </div>
+      </main>
     </form>
   </body>
 </html>
